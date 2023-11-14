@@ -147,7 +147,7 @@ font-size: 15px;
     max-width: 1180px;
     height: 438px;
     margin: 0 auto;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 }
 .container {
     width: 353px;
@@ -198,11 +198,15 @@ font-size: 15px;
     padding: 18px 25px;
     text-transform: uppercase;
     text-decoration: none;
-    border: 1px solid #FBB731
+    border: 1px solid #FBB731;
+    transition: 0.2s;
 }
 .banner-link:hover {
     background-color:transparent;
     color: #FBB731;
+}
+.menu {
+    padding-top: 20px;
 }
 .menu-header{
     display: flex;
@@ -369,6 +373,30 @@ font-size: 15px;
     padding-left: 0;
     list-style-type: none;
 }
+.button-up {
+    background-color: #fbb731;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #1e2f40;
+    text-decoration: none;
+    padding: 5px 20px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 5px;
+    transition: 1s;
+}
+.button-up:hover {
+    background-color: #f37335;
+}
+.button-up.hidden {
+    opacity: 0;
+}
+.button-up.visible {
+    opacity: 1;
+}
+
 /* styles index*/
 .main {
     background: linear-gradient(180deg, #0C4C7B -100%, #1E2F40 100%);
